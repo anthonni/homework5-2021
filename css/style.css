@@ -61,7 +61,7 @@ nav a{
   font-weight: bold;
   text-decoration: none;
 }
-nav:hover{
+nav a:hover{
 text-decoration: underline;
 }
 
@@ -73,6 +73,8 @@ text-decoration: underline;
   -webkit-transition: top 1s ease-out;
   transition: top 1s ease-out;
   z-index: 1;
+  position: absolute;
+  top: -40px
 
   /* Requirement 3a code here*/
   
@@ -92,7 +94,7 @@ a:focus{
 
 .container{
   display:grid;
-  grid-template-columns: 1fr 5 fr 1 fr;
+  grid-template-columns: 1fr 5fr 1 fr;
   grid-template-rows: auto auto auto auto auto;
   grid-row-gap: 15px;
 }
@@ -105,7 +107,7 @@ header{
   background-size: cover; /* Parallax effect */
   color: white;
   height: 400px; /* Parallax effect */
-  grid-column: 1/ span -1;
+  grid-column: 1/-1;
   grid-row: 1/ span 1;
   background-image: url(../images/header.jpg);
   background-repeat: no-repeat;
@@ -179,8 +181,8 @@ grid-row: 2/span 1;
 
   .container{
    display:grid;
-   grid-template-columns: 50px, auto, 500px, auto, and  50px;
-   grid-template-rows: 400px, 400px, 400px, 400px, and 400px;
+   grid-template-columns: 50px auto 500px auto 50px;
+   grid-template-rows: 400px 400px 400px 400px 400px;
   }
 
   .about-image{
